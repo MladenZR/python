@@ -1,0 +1,12 @@
+# python
+
+# Python heat map
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = datasets[1]
+teble_name = df.pivot("Good events","Total events","Rate")
+plt.figure(figsize = (16,12))
+sns.set(font_scale=2)
+ax = sns.heatmap(table_name, linewidths=.2, linecolor="Silver",
+cmap="Blues", annot=True, annot_kws={"size": 16})
